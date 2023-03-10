@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Loader.jsx", "components/ClientOnly.jsx", "components/Footer.jsx", "components/SubSlider.jsx", "components/Instagram.jsx", "components/InstagramImg.jsx", "components/Navbar.jsx", "components/SliderModal.jsx", "layout/layout.tsx", "pages/api/email.js", "pages/_app.tsx", "pages/_document.tsx", "pages/about.jsx", "pages/artworks.jsx", "pages/contact.jsx", "pages/impressum.jsx", "pages/index.jsx"],
   "exclude": ["node_modules"]
 }

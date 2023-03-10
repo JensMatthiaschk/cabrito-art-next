@@ -1,0 +1,49 @@
+{
+    "general": {
+        "site_notice": "site notice",
+        "required": "required",
+        "submit": "Submit",
+        "follow_instagram": "Follow him on instagram!",
+        "here": "here"
+    },
+    "about": {
+        "section_title": "About",
+        "content": {
+            "part-1": "Cabrito Art was born out of the idea of giving artists the opportunity to present themselves and their works in an unconventional way.",
+            "part-2": "Cabrito Art currently accompanies the artist 'Rubio' from the creation, through the completion to the exhibition of his works. His work is made up of different styles, including canvas paintings, collage art, upcycling & sculpture work and digital reprints.",
+            "part-3": "Enjoy the versatile art by 'Rubio'",
+            "part-4": "",
+            "part-5": "Cabrito Art hopes you enjoy the following pages!"
+        }
+    },
+    "artworks": {
+        "section_title": "Artworks",
+        "content": {
+            "part-1": "'Rubio' aka Jonas Fensch, born in Berlin in 1979, is an artist whose roots go back to the graffiti scene of the early 90's and who is currently finding his expression in urban street art and illustration.",
+            "part-2": "The bulky waste on the street and in the hallway is a gift for his work. In this way, a new canvas is quickly created from the old cupboard door, the mirror or the Euro pallet, freshly painted.",
+            "part-3": "The impulse comes from the available materials: Don't just start painting when all the colors are on the shelf, but sometimes just let red and blue guide you in your own visual cosmos. Rather than creating a slick surface, 'Rubio' leaves traces of the production process, evoking a contrast to the flawless perfection of a canvas.",
+            "part-4": "In this way, 'Rubio' reflects his city and his Berlin with his works. Sometimes it went completely over the top and was applied too thickly, sometimes saved at the wrong end, inadequate, but puristic and sexy - typically Berlin. What is not wanted is wanted, because only the sky is perfect, but art is always only a fraction looking for connection."
+        },
+        "filter": {
+            "title": "categories",
+            "categories": [
+                "all",
+                "canvas",
+                "collages",
+                "upcycling",
+                "sculptures",
+                "digital reprints"
+            ]
+        }
+    },
+    "contact": {
+        "section_title": "Contact",
+        "message": "Send us a message!",
+        "form": {
+            "name": "your name*",
+            "email": "your email*",
+            "subject": "subject",
+            "message": "your message*"
+        }
+    }
+}

@@ -6,7 +6,12 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        luckiest_guy: ['var(--font-luckiest_guy)'],
+        roboto_mono: ['var(--font-roboto_mono)']
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }

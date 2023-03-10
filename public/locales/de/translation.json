@@ -1,0 +1,49 @@
+{
+    "general": {
+        "site_notice": "Impressum",
+        "required": "benötigte Felder",
+        "submit": "Abschicken",
+        "follow_instagram": "Folge ihm auf Instagram!",
+        "here": "hier"
+    },
+    "about": {
+        "section_title": "Über",
+        "content": {
+            "part-1": "Cabrito Art wurde aus der Idee heraus geboren, Künstlern die Möglichkeit zu geben, sich und ihre Werke auf unkonventionelle Art und Weise vorzustellen.",
+            "part-2": "Dabei begleitet Cabrito Art aktuell den Künstler “Rubio“ von der Entstehung, über die Fertigstellung bis hin zur Ausstellung seiner Werke. Seine Arbeit setzt sich hierbei aus verschiedenen Stilrichtungen zusammen, dazu gehören unter anderem Leinwandmalereien, Collagen Art, Upcycling & Skulptuarbeiten sowie digitale Reprints.",
+            "part-3": "Erfreuen Sie sich",
+            "part-4": "an der vielseitigen Kunst by “Rubio“.",
+            "part-5": "Cabrito Art wünscht Ihnen viel Spaß auf den folgenden Seiten!"
+        }
+    },
+    "artworks": {
+        "section_title": "Kunstwerke",
+        "content": {
+            "part-1": "'Rubio' alias Jonas Fensch, geboren 1979 in Berlin, ist ein Künstler, dessen Wurzeln in die Graffiti-Szene der frühen 90ziger zurückreichen und der aktuell seine Verwirklichung in der Urbanen Street Art und Illustration findet.",
+            "part-2": "Für seine Arbeiten ist der Sperrmüll auf der Straße und im Hausflur ein Geschenk. So wird kurzerhand aus der alten Schranktür, dem Spiegel oder der Europalette frisch lackiert eine neue Leinwand geschaffen.",
+            "part-3": "Der Impuls entsteht durch die zur Verfügung stehenden Materialen: Nicht erst mit dem Malen beginnen, wenn alle Farben im Regal stehen, sondern sich auch mal nur von rot und blau im eigenen visuellen Kosmos führen lassen. Anstatt eine aalglatte Oberfläche zu schaffen, hinterlässt 'Rubio' Spuren des Produktionsprozesses und ruft so einen Kontrast zur makellosen Perfektion einer Leinwand hervor.",
+            "part-4": "So reflektiert 'Rubio' mit seinen Werken seine Stadt und sein Berlin. Mal voll über das Ziel hinaus geschossen und zu dick aufgetragen, mal am falschen Ende gespart, mangelhaft, aber puristisch und sexy - typisch Berlin halt. Das nicht gewollte ist gewollt, denn nur der Himmel ist perfekt, die Kunst ist aber immer nur ein Bruchteil auf der Suche nach Anschluss."
+        },
+        "filter": {
+            "title": "Kategorien",
+            "categories": [
+                "Alle",
+                "Leinwand",
+                "Collagen",
+                "Upcycling",
+                "Skulptuarbeiten",
+                "Digitaler Druck"
+            ]
+        }
+    },
+    "contact": {
+        "section_title": "Kontakt",
+        "message": "Sende uns eine Nachricht!",
+        "form": {
+            "name": "Dein Name*",
+            "email": "Deine Email*",
+            "subject": "Betreff",
+            "message": "Deine Nachricht*"
+        }
+    }
+}
