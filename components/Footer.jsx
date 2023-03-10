@@ -10,8 +10,8 @@ export default function Footer() {
 
 
   return (
-    <div className="w-full text-center px-8 bg-black text-white pb-5 min-h-fit">
-      <div className="break-words text-xs sm:text-sm" translate="no"><span className="text-xl sm:text-2xl ">©</span> {year} Cabrito Art Marketing. All rights reserved.  | <Link href="/impressum" className="underline">{t('general.site_notice')}</Link></div>
+    <div className="w-full flex justify-center items-center p-8 bg-black text-white h-[80px]">
+      <div className="break-words text-xs sm:text-sm" translate="no"><span className="text-xl sm:text-2xl m-2 p-0">©</span> {year} Cabrito Art Marketing. All rights reserved.  | <Link href="/impressum" className="underline">{t('general.site_notice')}</Link></div>
     </div>
   )
 }

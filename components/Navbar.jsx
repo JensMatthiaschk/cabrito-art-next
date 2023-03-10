@@ -16,7 +16,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-black text-white">
+    <nav className="bg-black text-white w-full h-[80px]">
       <div className={nav ? "fixed block md:hidden p-6 z-20" : "absolute block md:hidden p-6"}>
         {nav ? <AiOutlineClose onClick={handleNav} size={20} /> :
           <AiOutlineMenu onClick={handleNav} size={20} />}

@@ -10,7 +10,7 @@ export default function ClientOnly({ children, ...delegated }) {
         return <Loader />;
     }
     return (
-        <div {...delegated}>
+        <div {...delegated} className="h-full">
             {children}
         </div>
     );

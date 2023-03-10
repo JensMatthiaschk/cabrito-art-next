@@ -20,15 +20,9 @@ const roboto_mono = Roboto_Mono({
   variable: '--font-roboto_mono'
 })
 
-type ComponentWithPageLayout = AppProps & {
-  Component: AppProps['Component'] & {
-    PageLayout?: React.ComponentType
-  };
-};
 
 
-
-function MyApp({ Component, pageProps }: ComponentWithPageLayout) {
+function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ClientOnly>
@@ -44,14 +38,8 @@ function MyApp({ Component, pageProps }: ComponentWithPageLayout) {
         <meta name="msapplication-config" content="/images/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <div className={`${luckiest_guy.variable} ${roboto_mono.variable} font-roboto_mono`}>
-        {Component.PageLayout ? (
-          <Component.PageLayout>
-            <Component {...pageProps} />
-          </Component.PageLayout>)
-          : (
-            < Component {...pageProps} />
-          )}
+      <div className={`${luckiest_guy.variable} ${roboto_mono.variable} font-roboto_mono h-full`}>
+        <Component {...pageProps} />
       </div>
     </ClientOnly>
   )
