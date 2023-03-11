@@ -16,12 +16,12 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-black text-white w-full h-[80px]">
-      <div className={nav ? "fixed block md:hidden p-6 z-20" : "absolute block md:hidden p-6"}>
+    <nav className="flex justify-center items-center w-full h-[80px]">
+      <div className={nav ? "fixed left-0 top-0 block md:hidden p-6 z-20" : "absolute left-0 top-0 block md:hidden p-6"}>
         {nav ? <AiOutlineClose onClick={handleNav} size={20} /> :
           <AiOutlineMenu onClick={handleNav} size={20} />}
       </div>
-      <div className={nav ? "md:hidden fixed top-0 left-0 right-0 bottom-0 w-full h-screen bg-black/90 text-white flex justify-center items-center text-center ease-in duration-300 z-10" : "md:hidden absolute top-0 left-[-100%] right-0 bottom-0 w-full h-screen bg-black/90 text-white rounded-md flex justify-center items-center text-center ease-out duration-300 z-10"}>
+      <div className={nav ? "md:hidden fixed top-0 left-0 w-full h-screen bg-black/90 text-white flex justify-center items-center text-center ease-in duration-300 z-10" : "md:hidden absolute top-0 left-[-100%] right-0 bottom-0 w-full h-screen bg-black/90 text-white rounded-md flex justify-center items-center text-center ease-out duration-300 z-10"}>
         <ul className="flex flex-col gap-y-3">
           <li className="text-2xl hover:text-gray-400"><Link href="/about">{t('about.section_title')}</Link></li>
           <li className="text-2xl hover:text-gray-400"><Link href="/artworks">{t('artworks.section_title')}</Link></li>
@@ -45,7 +45,7 @@ export default function Navbar() {
           }
         </ul>
       </div>
-      <div className="navbar-end hidden md:flex md:justify-between w-full px-8 py-4">
+      <div className="navbar-end hidden md:flex md:justify-between w-full px-16 py-8">
         <Link href="/about" className=" flex normal-case text-xl font-luckiest_guy gap-x-3 items-center"><span className="align-middle -mb-2">Cabrito</span><Image className="w-10" src={CabritoLogo} alt="Cabrito-Logo"></Image><span className="align-middle -mb-2">Art</span></Link>
         <ul className="flex justify-self gap-x-8 items-center">
           <li className="hover:text-gray-400"><Link href="/about">{t('about.section_title')}</Link></li>

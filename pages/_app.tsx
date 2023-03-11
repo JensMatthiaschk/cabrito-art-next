@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="msapplication-config" content="/images/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <div className={`${luckiest_guy.variable} ${roboto_mono.variable} font-roboto_mono h-full`}>
+      <div className={`${luckiest_guy.variable} ${roboto_mono.variable} font-roboto_mono h-full bg-black text-white`}>
         <Component {...pageProps} />
       </div>
     </ClientOnly>

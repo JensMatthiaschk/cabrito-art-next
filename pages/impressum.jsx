@@ -6,9 +6,9 @@ export default function Impressum() {
   const year = new Date().getFullYear()
 
   return (
-    <section id="site_notice" className="bg-black text-white absoulte top-0 left-0 h-full w-full">
+    <section id="site_notice" className="h-full bg-black overflow-scroll">
       <Navbar />
-      <div className='sm:px-40 px-10 text-sm sm:text-base py-20'>
+      <div className='sm:px-40 px-10 text-sm sm:text-base mt-12 sm:mt-24 h-fit'>
         <h1 className="text-2xl font-semibold">Impressum</h1>
         <br />
         <p>Angaben gemäß § 5 TMG</p>

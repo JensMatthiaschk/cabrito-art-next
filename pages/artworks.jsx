@@ -29,11 +29,11 @@ export default function Artwork() {
   }
 
   return (
-    <section id="artworks" className="flex flex-col h-fit bg-black">
+    <section id="artworks" className="h-full overflow-scroll">
       <Navbar />
-      <div className="px-8 lg:px-40 flex flex-col justify-center" onClick={() => { dropdownActive && setDropdownActive(false) }}>
-        <h1 className="text-2xl font-semibold mt-24">{t('artworks.section_title')}</h1>
-        <div className="flex flex-col sm:flex-row mt-24 lg:px-10 gap-x-10 md:gap-x-20 items-center w-full max-w-[1800px]">
+      <div className="px-8 lg:px-40 xl:px-64 flex flex-col mt-12 sm:mt-24 h-fit justify-between bg-black" onClick={() => { dropdownActive && setDropdownActive(false) }}>
+        <h1 className="text-2xl font-semibold">{t('artworks.section_title')}</h1>
+        <div className="flex flex-col sm:flex-row mt-8 sm:mt-16 gap-x-10 items-center w-full max-w-[1800px]">
           <div className="flex flex-col sm:w-1/2 xl:w-3/4">
             <h3 className="text-left text-xl font-semibold underline">Featured Artist</h3>
             <h4 className="mt-6 text-left text-xl font-semibold">Rubio</h4>
@@ -47,7 +47,7 @@ export default function Artwork() {
               <p>{t('artworks.content.part-4')}</p>
             </div>
           </div>
-          <div className="mt-12 sm:mt-0 w-1/2 xl:w-1/4 text-center">
+          <div className="mt-12 sm:mt-0 w-full sm:w-1/2 xl:w-1/4 text-center">
             <Link href="/"><div className="relative">
               <Image
                 className="rounded-full w-24 h-24 overflow-hidden"
@@ -60,7 +60,7 @@ export default function Artwork() {
                 <p className="text-gray-300 hidden group-hover:block ease-in duration-100"><FaInstagram size={30} /></p>
               </div>
             </div></Link>
-            <p className="text-xl font-hold mt-6">{t('general.follow_instagram')}</p>
+            <p className="sm:text-xl font-hold mt-6">{t('general.follow_instagram')}</p>
             <Link href="/"><p className="pb-4 mt-4">@Artist</p></Link>
           </div>
         </div>
@@ -92,8 +92,8 @@ export default function Artwork() {
         <Instagram setModalActive={setModalActive} setCurrent={setCurrent} />
         {modalActive ? <SliderModal slides={SliderData} modalActive={modalActive} setModalActive={setModalActive} setCurrent={setCurrent} current={current} /> : null}
 
+        <Footer />
       </div>
-      <Footer />
     </section>
 
   )

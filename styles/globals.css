@@ -15,13 +15,13 @@ margin:0;
 #__next {
   height: 100%;
   background-color: black;
+  background: black;
 }
 
 @layer {
   html,
   body {
-    height: 100%;
-    color: white;
+    @apply h-full
   }
 }
 

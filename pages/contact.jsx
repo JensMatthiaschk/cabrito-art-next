@@ -74,82 +74,82 @@ export default function Contact() {
 
     return (
         <>
-            <section id="contact" className="bg-black text-white flex flex-col justify-between w-full min-h-[100vh]">
+            <section id="contact" className="h-full overflow-scroll bg-black">
                 <Navbar />
-                <div className="flex flex-col">
-                    <div className='md:px-40 px-8 bg-black text-white flex flex-col jusftify-center items-center min-w-full'>
-                        <h1 className="text-2xl font-semibold items-start sm:mt-12 mt-24 w-full">{t('contact.section_title')}</h1>
-                        <p className="text-left sm:mt-8 my-6 w-full">{t('contact.message')}</p>
-                        <form className="flex flex-col gap-y-4 sm:mt-8 w-full " onSubmit={onSubmit} method="post"
-                            encType='application/x-www-form-urlencoded'
-                        >
-                            <input
-                                className={(touched.from_name ? "border-2 border-solid border-red-600" : "") + " px-2 bg-gray-600"}
-                                type='text'
-                                name='from_name'
-                                placeholder={t('contact.form.name')}
-                                value={toSend.from_name}
-                                onChange={handleChange}
-                                onBlur={handleChange}
-                                required
-                            />
-                            <input
-                                className={(touched.reply_to ? "border-2 border-solid border-red-600" : "") + " px-2 bg-gray-600"}
-                                type='email'
-                                name='reply_to'
-                                placeholder={t('contact.form.email')}
-                                value={toSend.reply_to}
-                                onChange={handleChange}
-                                onBlur={handleChange}
-                                required
-                            />
-                            <input
-                                className={(touched.subject ? "border-2 border-solid border-red-600" : "") + " px-2 bg-gray-600"}
-                                type='text'
-                                name='subject'
-                                placeholder={t('contact.form.subject')}
-                                value={toSend.subject}
-                                onChange={handleChange}
-                                onBlur={handleChange}
-                            />
-                            <textarea
-                                className={(touched.message ? "border-2 border-solid border-red-600" : "") + " px-2 bg-gray-600"}
-                                type='text'
-                                name='message'
-                                placeholder={t('contact.form.message')}
-                                rows='10'
-                                value={toSend.message}
-                                onChange={handleChange}
-                                onBlur={handleChange}
-                                required
-                            />
-                            <p>*{t('general.required')}</p>
-                            <button className="border w-fit px-10 py-1 hover:text-black hover:bg-white mt-5" type='submit'>{loading === true ? <TailSpin
-                                height="1.5rem"
-                                width="1.5rem"
-                                color="currentColor"
-                                ariaLabel="tail-spin-loading"
-                                radius="1"
-                                wrapperStyle={{}}
-                                wrapperClass=""
-                                visible={true}
-                            /> : <p>{t('general.submit')}</p>}</ button >
-                        </form>
 
-                        {postEmailResponse.ok === true ?
-                            <div className="flex flex-col w-full mt-6">
-                                <p className="text-green-600">email sent successfully!</p>
-                                <p className="text-xl mt-2">{t('email-success')}</p>
-                            </div> : postEmailResponse.ok === false &&
-                            <div className="flex flex-col w-full mt-6">
-                                <p className="text-red-600">email not sent</p>
-                                <h3 className="text-xl mt-2">{t('email-error')}</h3>
-                            </div>}
+                <div className='flex flex-col lg:px-40 px-8 xl:px-64 mt-12 sm:mt-24 h-fit justify-between'>
+                    <h1 className="text-2xl font-semibold items-start w-full">{t('contact.section_title')}</h1>
+                    <p className="text-left sm:mt-8 my-6 w-full">{t('contact.message')}</p>
+                    <form className="flex flex-col gap-y-4 sm:mt-8 w-full " onSubmit={onSubmit} method="post"
+                        encType='application/x-www-form-urlencoded'
+                    >
+                        <input
+                            className={(touched.from_name ? "border-2 border-solid border-red-600" : "") + " px-2 bg-gray-600"}
+                            type='text'
+                            name='from_name'
+                            placeholder={t('contact.form.name')}
+                            value={toSend.from_name}
+                            onChange={handleChange}
+                            onBlur={handleChange}
+                            required
+                        />
+                        <input
+                            className={(touched.reply_to ? "border-2 border-solid border-red-600" : "") + " px-2 bg-gray-600"}
+                            type='email'
+                            name='reply_to'
+                            placeholder={t('contact.form.email')}
+                            value={toSend.reply_to}
+                            onChange={handleChange}
+                            onBlur={handleChange}
+                            required
+                        />
+                        <input
+                            className={(touched.subject ? "border-2 border-solid border-red-600" : "") + " px-2 bg-gray-600"}
+                            type='text'
+                            name='subject'
+                            placeholder={t('contact.form.subject')}
+                            value={toSend.subject}
+                            onChange={handleChange}
+                            onBlur={handleChange}
+                        />
+                        <textarea
+                            className={(touched.message ? "border-2 border-solid border-red-600" : "") + " px-2 bg-gray-600"}
+                            type='text'
+                            name='message'
+                            placeholder={t('contact.form.message')}
+                            rows='10'
+                            value={toSend.message}
+                            onChange={handleChange}
+                            onBlur={handleChange}
+                            required
+                        />
+                        <p>*{t('general.required')}</p>
+                        <button className="border w-fit px-10 py-1 hover:text-black hover:bg-white mt-5" type='submit'>{loading === true ? <TailSpin
+                            height="1.5rem"
+                            width="1.5rem"
+                            color="currentColor"
+                            ariaLabel="tail-spin-loading"
+                            radius="1"
+                            wrapperStyle={{}}
+                            wrapperClass=""
+                            visible={true}
+                        /> : <p>{t('general.submit')}</p>}</ button >
+                    </form>
 
-                        <div className='w-1/2 lg:w-1/4 sm:my-16 my-10 flex justify-center items-center'>
-                            <Link href="/about"><Image src={CabritoLogo} alt="Cabrito-Logo"></Image></Link>
-                        </div>
+                    {postEmailResponse.ok === true ?
+                        <div className="flex flex-col w-full mt-6">
+                            <p className="text-green-600">email sent successfully!</p>
+                            <p className="text-xl mt-2">{t('email-success')}</p>
+                        </div> : postEmailResponse.ok === false &&
+                        <div className="flex flex-col w-full mt-6">
+                            <p className="text-red-600">email not sent</p>
+                            <h3 className="text-xl mt-2">{t('email-error')}</h3>
+                        </div>}
+
+                    <div className='w-1/2 lg:w-1/4 sm:my-16 my-10 flex justify-center items-center mx-auto'>
+                        <Link href="/about"><Image src={CabritoLogo} alt="Cabrito-Logo"></Image></Link>
                     </div>
+
                     <Footer />
                 </div>
             </section>
